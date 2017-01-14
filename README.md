@@ -4,10 +4,11 @@ Simple docker image for [myrulib](https://github.com/lintest/myrulib/) app.
 
 # Why?
 
-The myrulib is not supported for modern linux distibutions.
+The myrulib is not supported for modern linux distributions.
 Provided packages deb and rmp is outdated.
 Installing from source code via `.configure && make` fails.
-So dockerizing of this app is rescue for modern linux users.
+
+So dockerizing of this app is rescue for modern linux distributions users.
   
 # How to use
   
