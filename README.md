@@ -32,4 +32,4 @@ Currently myrulib execuded by root.
 # Limitation
 
 It's quick and dirty image, so myrulib process executed via root user inside container.
-Track [issue #1]()https://github.com/qwazer/docker-myrulib/issues/1) for myrulib process user permissions.
+Track [issue #1](https://github.com/qwazer/docker-myrulib/issues/1) for myrulib process user permissions.
