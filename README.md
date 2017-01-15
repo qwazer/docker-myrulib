@@ -25,8 +25,11 @@ docker run  --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
  -v /home/${USER}/myrulib:/root \ 
    docker pull qwazer/docker-myrulib
 ```
+`/home/${USER}/myrulib` will be used as home folder for root user inside container.
+
+Currently myrulib execuded by root.
   
 # Limitation
 
 It's quick and dirty image, so myrulib process executed via root user inside container.
-Track issue#1 
+Track [issue #1]()https://github.com/qwazer/docker-myrulib/issues/1) for myrulib process user permissions.
