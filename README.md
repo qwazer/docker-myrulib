@@ -22,9 +22,11 @@ and run with
 
 ```bash
 docker run  --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
- -v /home/{$USER}/myrulib:/root 
-  \ myrulib
+ -v /home/${USER}/myrulib:/root \ 
+   docker pull qwazer/docker-myrulib
 ```
   
+# Limitation
 
-
+It's quick and dirty image, so myrulib process executed via root user inside container.
+Track issue#1 
