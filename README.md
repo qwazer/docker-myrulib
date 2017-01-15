@@ -23,7 +23,7 @@ and run with
 ```bash
 docker run  --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
  -v /home/${USER}/myrulib:/root \ 
-   docker pull qwazer/docker-myrulib
+   qwazer/docker-myrulib
 ```
 `/home/${USER}/myrulib` will be used as home folder for root user inside container.
 
