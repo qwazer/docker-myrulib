@@ -29,4 +29,5 @@ jobs:
         with:
           context: .
           platforms: linux/amd64
-          push: false
+          push: ${{ github.ref == 'refs/heads/master' }}
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}
