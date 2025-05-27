@@ -28,6 +28,17 @@ docker run  --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
 `/home/${USER}/myrulib` will be used as home folder for root user inside container.
 
 Currently myrulib execuded by root.
+
+## HI DPI support
+
+To adjust resolution for HI DPI screens pass `GTK_SCALE` parameter
+
+
+```bash
+docker run  --rm -e GTK_SCALE=2 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
+ -v /home/${USER}/myrulib:/root \ 
+   qwazer/docker-myrulib
+```
   
 # Limitation
 
